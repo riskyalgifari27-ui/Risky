@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rimba Puncak</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f4f1e8;
+    color: #20332d;
+}
+
+nav {
+    background: #183d35;
+    padding: 22px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.hero {
+    height: 90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    line-height: 1.6;
+}
+
+.gallery {
+    background: #e8e9df;
+}
+
+.quote {
+    background: #183d35;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+    font-size: 28px;
+}
+
+footer {
+    background: #102b24;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media(max-width:700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h3>RIMBA PUNCAK</h3>
+    <div>
+        <a href="#tentang">Tentang</a>
+        <a href="#jelajah">Jelajah</a>
+        <a href="#alam">Alam</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <div>
+        <h1>Temukan Damai<br>di Puncak.</h1>
+        <p>
+        Nikmati keindahan alam pegunungan,
+        hutan hijau, udara sejuk,
+        dan pemandangan yang menakjubkan.
+        </p>
+    </div>
+</header>
+
+<section id="tentang" class="intro">
+    <h2>Pesona Pegunungan</h2>
+    <p>
+    Pegunungan merupakan salah satu keindahan
+    alam yang memiliki udara sejuk, pepohonan
+    hijau, sungai, serta berbagai jenis flora
+    dan fauna. Alam pegunungan memberikan
+    ketenangan dan keseimbangan bagi kehidupan.
+    </p>
+</section>
+
+<section id="jelajah" class="gallery">
+    <h2>Keindahan Alam</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800">
+            <h3>Gunung</h3>
+            <p>
+            Gunung memiliki pemandangan indah
+            dengan puncak yang menjulang tinggi.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800">
+            <h3>Hutan</h3>
+            <p>
+            Hutan menjadi tempat tinggal
+            berbagai jenis tumbuhan dan hewan.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800">
+            <h3>Air Terjun</h3>
+            <p>
+            Air terjun menghadirkan suasana
+            alami yang sejuk dan menyegarkan.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="alam" class="quote">
+    <p>
+    "Alam tidak hanya untuk dinikmati,
+    tetapi juga untuk dijaga dan dilestarikan."
+    </p>
+</section>
+
+<footer>
+    <h3>RIMBA PUNCAK</h3>
+    <p>Jaga Alam, Jaga Kehidupan.</p>
+    <p>© 2026 Rimba Puncak</p>
+</footer>
+
+</body>
+</html>
